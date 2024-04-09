@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); body {
+    background-color: rgb(10, 10, 10);
+    color: rgb(255, 255, 255);
+    font-family: poppins, sans-serif;
+}
+
+.font-extra-bold {
+    font-weight: 800;
+}
+
+.font-black {
+    font-weight: 900;
+}
+
+.font-regular {
+    font-weight: 400;
+}
+
+.font-light {
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.me {
+    font-size: 3rem;
+}
+
+.me-detail {
+    color: rgba(255, 255, 255, 0.42);
+}
+
+.me-info {
+    font-size: 30px;
+    margin-bottom: 60px;
+}
+
+a:hover {
+    color: rgb(131, 134, 139);
+}
+
+.notfound {
+    color: rgb(209, 213, 219);
+    text-align: center;
+}
+
+.notfound-text {
+    text-decoration: none;
+}
+
+.main {
+    background-color: rgb(16, 16, 16);
+    border-radius: 17px;
+    position: relative;
+    height: 525px;
+    animation: 0.5s ease 0s 1 normal none running zoomIn;
+}
+
+.vertical-center {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.main-background {
+    width: 100%;
+    height: 150px;
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+    object-fit: cover;
+}
+
+.main-profilephoto {
+    object-fit: cover;
+    width: 125px;
+    border-radius: 39px;
+    animation: 0.5s ease 0s 1 normal none running zoomIn;
+}
+
+.main-name {
+    text-align: center;
+    margin: 85px auto auto;
+}
+
+.main-job {
+    text-align: center;
+    margin: auto;
+    color: rgb(96, 96, 96);
+    font-size: 18px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Konteyneri ekranın tam yüksekliği yapar */
+}
+
+.main-spotify {
+    max-width: 360px;
+    width: 100%; /* Konteyner genişliğine göre esnek olur */
+    /* Diğer stil tanımlamalarınız */
+}
+iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateX(20px); /* Sağa doğru hafif bir kaydırma yapar */
+}
+
+
+.song-range {
+    left: 65px;
+    bottom: 24px;
+    width: 100%;
+    height: 3px;
+    appearance: none;
+    background: rgb(81, 81, 81);
+    outline: none;
+    border-radius: 15px;
+}
+
+.song-range::-webkit-slider-thumb {
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgb(81, 81, 81);
+}
+
+.song-progress {
+    font-size: 12px;
+    color: rgb(87, 87, 87);
+    flex: 1 1 auto;
+}
+
+.song-duration {
+    font-size: 12px;
+    color: rgb(87, 87, 87);
+}
+
+.song-image {
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    margin: 13px;
+    float: left;
+    grid-column: 1 / 2;
+}
+
+.bar {
+    height: 4px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    margin: 20px 0px 6px;
+}
+
+.bar-inside {
+    background-color: rgb(236, 89, 51);
+    width: 0%;
+    height: 4px;
+    border-radius: 5px;
+}
+
+.song-name-area {
+    grid-column: 2 / 3;
+}
+
+.song-name {
+    margin: 12px 0px 0px;
+    font-size: 18px;
+    min-width: 225px;
+}
+
+.song-author {
+    margin: 0px;
+    font-size: 12px;
+    color: rgb(176, 176, 176);
+}
+
+.social-item {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.divider {
+    width: 50px;
+    background: rgb(236, 89, 51);
+    border-radius: 48px;
+    margin: 60px auto;
+    height: 3px !important;
+    opacity: 1 !important;
+}
+
+.social-item ion-icon {
+    font-size: 27px;
+    color: rgb(255, 255, 255);
+    margin-right: 10px;
+    background: rgb(236, 89, 51);
+    border-radius: 48px;
+    padding: 10px;
+}
+
+.social-item ion-icon:hover {
+    animation: 0.5s ease 0s 1 normal none running swing;
+    color: rgb(255, 255, 255);
+}
+
+.head-tick {
+    position: sticky;
+    top: 0px;
+    background-color: rgb(242, 113, 33);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: 0px !important;
+    padding: 0px !important;
+    width: 100% !important;
+    height: 3px !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination {
+    bottom: -45px !important;
+}
+
+
+.swiper {
+    height: auto; /* Yüksekliği otomatik ayarlamak için */
+    /* Diğer gerekli stil tanımlamaları */
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.44) !important;
+}
+
+.swiper-pagination-bullet {
+    background-color: rgba(255, 255, 255, 0.24);
+    opacity: 1;
+}
+
+.item {
+    background: rgb(23, 23, 23);
+    border-radius: 24px;
+    padding: 10px 35px;
+    text-align: center;
+}
+
+.item-logo {
+    width: 150px;
+    height: 150px;
+}
+
+.item-name {
+    margin: 0px;
+    font-size: 18px;
+}
+
+.item-desc {
+    margin: 0px;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.42);
+}
+
+.item-icon {
+    font-size: 25px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
